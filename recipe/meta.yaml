@@ -10,7 +10,7 @@ source:
   sha256: c022f37ee51e54714657bbc2890b5e77582d94185f45b37c4da566ebbfa9f549
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -23,13 +23,12 @@ requirements:
   run:
     - python >=3.6
     - GDAL >=3
+    - click
     - large-image-source-gdal
     - flask >=2.0.0
     - flask-caching
     - requests
     - scooby
-    - ipyleaflet
-    - folium
 
 test:
   imports:
