@@ -1,5 +1,5 @@
 {% set name = "localtileserver" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e7e7fd729cad5d37ab943348a550bdb4e72893108b9a29c5d872f6a70b33937b
+  sha256: 9d7ff5b76ba171508d4312a760b5bc9c7efa83fee0cb8bec77e542623d921ca8
 
 build:
   number: 0
