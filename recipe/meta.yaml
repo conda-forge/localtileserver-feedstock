@@ -10,7 +10,7 @@ source:
   sha256: bec24d3d98fb42335d05b2fc62ba3b6783b937febcc6866097414afb585e1d4d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -30,6 +30,7 @@ requirements:
     - flask-restx >=0.5.0
     - requests
     - scooby
+    - werkzeug <2.1.0
 
 test:
   imports:
