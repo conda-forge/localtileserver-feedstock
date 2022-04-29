@@ -1,5 +1,5 @@
 {% set name = "localtileserver" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 537de6a38c6a3b85fdd2fda3847f552a06bf303955da14d36d9bccaa14ba3940
+  sha256: 88c1c727604a24c5b3fb7f60212b53f9f1b50a19c20f17074f53844119ed7d4e
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - large-image-source-gdal >=1.13
     - flask >=2.0.0
     - flask-caching
+    - flask-cors
     - flask-restx >=0.5.0
     - requests
     - scooby
