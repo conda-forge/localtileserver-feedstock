@@ -10,7 +10,7 @@ source:
   sha256: e0ca3a66e77a55c835fb969aaf28d0868e6dce2eb753d1a3e175ec2f9917cd09
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -27,9 +27,10 @@ requirements:
     - large-image >=1.13
     - large-image-source-gdal >=1.13
     - flask >=2.0.0
-    - flask-caching
+    - flask-caching <2.0.0
     - flask-cors
     - flask-restx >=0.5.0
+    - werkzeug <2.2
     - requests
     - scooby
     - server-thread
