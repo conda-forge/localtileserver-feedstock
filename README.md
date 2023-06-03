@@ -1,11 +1,11 @@
-About localtileserver
-=====================
+About localtileserver-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/localtileserver-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/banesullivan/localtileserver
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/localtileserver-feedstock/blob/main/LICENSE.txt)
 
 Summary: Local tile server for viewing geospatial raster files with ipyleaflet or folium
 
