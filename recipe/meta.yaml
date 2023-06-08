@@ -10,7 +10,7 @@ source:
   sha256: 304461e570b92c747f48a740c3754124878a00293c856bbf30108b7bb99b5f19
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -27,8 +27,8 @@ requirements:
     - flask-caching
     - flask-cors
     - flask-restx >=0.5.0
-    - large-image >=1.22.1
-    - large_image_source_rasterio >=1.22.1
+    - large-image >=1.22.2
+    - large_image_source_rasterio >=1.22.2
     - rasterio
     - requests
     - scooby
