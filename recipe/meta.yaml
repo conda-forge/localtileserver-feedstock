@@ -1,5 +1,5 @@
 {% set name = "localtileserver" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 304461e570b92c747f48a740c3754124878a00293c856bbf30108b7bb99b5f19
+  sha256: 58d372c185e3393008497b8b21d6bc6bdfba052320284c637b65e442c7d698c3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.7
     - click
-    - flask >=2.0.0
+    - flask >=2.0.0,<3
     - flask-caching
     - flask-cors
     - flask-restx >=0.5.0
