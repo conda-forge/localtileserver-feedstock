@@ -36,7 +36,6 @@ requirements:
 
 test:
   imports:
-    - large_image_source_rasterio
     - localtileserver
 
 about:
