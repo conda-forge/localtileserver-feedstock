@@ -27,9 +27,8 @@ requirements:
     - flask-caching
     - flask-cors
     - flask-restx >=0.5.0
-    - large-image >=1.22.2
-    - large_image_source_rasterio >=1.22.2
-    - rasterio
+    - rio-tiler
+    - rio-cogeo
     - requests
     - scooby
     - server-thread
