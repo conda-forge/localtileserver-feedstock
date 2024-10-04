@@ -28,7 +28,7 @@ requirements:
     - flask-caching
     - flask-cors
     - flask-restx >=1.3.0
-    - matplotlib
+    - matplotlib-base
     - rio-tiler
     - rio-cogeo
     - requests
