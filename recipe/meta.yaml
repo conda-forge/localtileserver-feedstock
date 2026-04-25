@@ -1,5 +1,5 @@
 {% set name = "localtileserver" %}
-{% set version = "0.11.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3af91f295c93523e0c78d718c2167b65add436782fada38b7207fca524e806b2
+  sha256: b3c422966a7145ddaf5131c374627ba3a863648fa38090489c856d96ccdb433c
 
 build:
   number: 0
@@ -22,6 +22,10 @@ requirements:
     - pip
     - setuptools
   run:
+    - fastapi >=0.100.0
+    - jinja2
+    - jupyter-loopback >=0.3.3
+    - uvicorn
     - flask_cors
     - python >={{ python_min }}
     - click
